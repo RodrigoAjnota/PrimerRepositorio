@@ -4,7 +4,7 @@
     padding: 0;
     margin: 0;
 }
-
+/*Volvi a hacer todo el proyecto de 0, y no me dio el tiempo para poner el media queries, lo terminare cuando entregue el desafio de animaciones*/
 
 /*ACA EMPIEZA EL HEADER*/
 header{
@@ -63,6 +63,9 @@ footer#pieInicio{
 h1, h2, h3{
     font-family: 'Noto Sans', sans-serif;
     padding: 10px;
+}
+.asideInicio{
+    padding-bottom: 30px;
 }
 section, footer, aside{
     background-color: whitesmoke;
@@ -177,6 +180,9 @@ footer#pieContactos{
 
 
 /*ACA EMPIEZA LA SECCION DE CONOZCANOS*/
+.imagenNosotros{
+    padding-top: 30px;
+}
 #grillaNosotros{
     display: grid;
     grid-template-areas: 
@@ -237,7 +243,7 @@ p{
 }
 
 h3{
-    padding-bottom: 5px;
+    padding-bottom: 10px;
 }
 
 div{
