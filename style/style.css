@@ -7,46 +7,30 @@
 /*Volvi a hacer todo el proyecto de 0, y no me dio el tiempo para poner el media queries, lo terminare cuando entregue el desafio de animaciones*/
 
 /*ACA EMPIEZA EL HEADER*/
-header{
-    background-color: #8a2be2;
-}
-.container{
-    border: 5px solid black;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: row;
-}
-.box{
-    padding: 30px;
-}
-.imgTitulo{
-    padding: 0;
-    height: 120px;
-    
-}
 a{
     color: black;
     font-size: x-large;
 }
+header{
+    background-color: #8a2be2;
+}
+body{
+    background-color: #8a2be2;
+}
+.border{
+    border: 1px solid #8a2be2 !important
+}
 
 
 /*ACA EMPIEZA EL MAIN*/
-.border{
-    border: 1px solid black;
-}
 #grillaInicio{
     display: grid;
     grid-template-areas: 
-    "header header header"
     "anuncio anuncio publicidad"
     "heladeras heladeras publicidad"
     "footer footer footer";
     grid-template-columns: auto;
-    grid-template-rows: 140px 355px 655px 250px;
-}
-header#headInicio{
-    grid-area: header;
+    grid-template-rows: auto;
 }
 section#anuncioInicio{
     grid-area: anuncio;
@@ -70,6 +54,9 @@ h1, h2, h3{
 section, footer, aside{
     background-color: whitesmoke;
 }
+.espacioImg{
+    padding: 10px;
+}
 
 
 /*ACA EMPIEZA LA SECCION DE PRODUCTOS*/
@@ -81,16 +68,10 @@ section, footer, aside{
 #grillaProductos{
     display: grid;
     grid-template-areas:
-    "headerPs   headerPs   headerPs"
     "heladeras  heladeras  publicidadPs"
     "microondas microondas publicidadPs"
     "hornos     hornos     publicidadPs"
     "footer     footer     footer";
-    grid-template-columns: auto;
-    grid-template-rows: 140px auto;
-}
-header#headProductos{
-    grid-area: headerPs;
 }
 section#productoHeladeras{
     grid-area: heladeras;
@@ -111,21 +92,14 @@ footer#pieProductos{
 
 /*ACA EMPIEZA LA SECCION DE PEDIDOS*/
 .imagenPedido{
-    padding-top: 40px;
+    padding: 50px;
 }
 #grillaPedidos{
     display: grid;
     grid-template-areas: 
-    "header  header  header"
     "pedidos pedidos publicidad"
     "anuncio anuncio publicidad"
     "footer  footer  footer";
-    grid-template-columns: auto;
-    grid-template-rows: 140px auto;
-}
-
-header#headPedidos{
-    grid-area: header;
 }
 section#pedidos{
     grid-area: pedidos;
@@ -142,28 +116,15 @@ footer#piePedidos{
 
 
 /*ACA EMPIEZA LA SECCION DE CONTACTOS*/
-.formText{
-    font-family: none;
-}
-.padreFormulario{
-    display: flex;
-    flex-direction: column;
-}
 .imagenContacto{
-    padding-top: 11px;
+    padding: 40px;
 }
 #grillaContactos{
     display: grid;
     grid-template-areas: 
-    "header     header     header"
     "formulario formulario publicidad"
     "anuncio    anuncio    publicidad"
     "footer     footer     footer";
-    grid-template-columns: auto;
-    grid-template-rows: 140px auto;
-}
-header#headContactos{
-    grid-area: header;
 }
 section#formulario{
     grid-area: formulario;
@@ -186,15 +147,10 @@ footer#pieContactos{
 #grillaNosotros{
     display: grid;
     grid-template-areas: 
-    "header  header  header"
     "titulo  titulo  publicidad"
     "anuncio anuncio publicidad"
     "footer  footer  footer";
-    grid-template-columns: auto;
-    grid-template-rows: 140px auto;
-}
-header#headNosotros{
-    grid-area: header;
+    grid-template-rows: auto 369px;
 }
 section#nosotros{
     grid-area: titulo;
@@ -212,11 +168,14 @@ span{
     font-size: large;
     padding: 10px;
 }
+.espacioAcerca{
+    padding-bottom: 30px;
+}
+
 
 /*ACA EMPIEZA EL FOOTER*/
 p{
     font-family: 'Times New Roman', Times, serif;
-    padding-bottom: 10px;
 }
 
 .redesSociales{
@@ -232,7 +191,7 @@ p{
 
 .caja{
     width: 200px;
-    height: 170px;
+    height: 200px;
     border: 4px solid white;
 }
 
@@ -244,6 +203,7 @@ p{
 
 h3{
     padding-bottom: 10px;
+    font-size: medium;
 }
 
 div{
