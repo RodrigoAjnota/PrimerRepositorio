@@ -6,6 +6,7 @@
 }
 /*Volvi a hacer todo el proyecto de 0, y no me dio el tiempo para poner el media queries, lo terminare cuando entregue el desafio de animaciones*/
 
+@media (min-width:1200px){
 /*ACA EMPIEZA EL HEADER*/
 a{
     color: black;
@@ -20,7 +21,9 @@ body{
 .border{
     border: 1px solid #8a2be2 !important
 }
-
+.navbar {
+    background-color: blueviolet;
+}
 
 /*ACA EMPIEZA EL MAIN*/
 #grillaInicio{
@@ -208,4 +211,64 @@ h3{
 
 div{
     text-align: center;
+}
+
+}
+
+@media (max-width:600px){
+    #grillaInicio{
+        display: grid;
+        grid-template-areas: 
+        "anuncioInicio"
+        "productosInicio"
+        "publicidadInicio"
+        "pieInicio";
+    }
+    .imgMedia{
+        width: 595px;
+    }
+    .contenedor{
+        display: flex;
+    }
+    h3{
+        font-size: smaller;
+    }
+    p{
+        font-size: x-small;
+    }
+    .redesSociales {
+        width: 30px;
+    }
+    div{
+        text-align: center;
+    }
+    .caja {
+        text-align: center;
+    }
+    header {
+        background-color: blueviolet;
+    }
+    .h3Media{
+        padding-top: 40px;
+    }
+    .productos{
+        font-family: "Work Sans", sans-serif;
+        text-decoration: underline;
+        font-size: large;
+    }
+    .row{
+        --bs-gutter-x: 0;
+    }
+}
+
+@media (max-width:400px){
+    .imgMedia{
+        width: 395px;
+    }
+    h3{
+        font-size: x-small;
+    }
+    p{
+        font-size: xx-small;
+    }
 }
